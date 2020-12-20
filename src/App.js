@@ -4,7 +4,7 @@ import {
   FirebaseDataProvider,
   FirebaseAuthProvider
 } from "react-admin-firebase";
-import { Comment, Category } from '@material-ui/icons';
+import { Home, Category, ShoppingCart } from '@material-ui/icons';
 import Dashboard from './dashboard';
 import { ProductList, ProductShow, ProductCreate, ProductEdit } from "./products";
 import { CategoryList, CategoryShow, CategoryCreate, CategoryEdit } from "./categories";
@@ -43,7 +43,7 @@ class App extends React.Component {
         />
         <Resource
           name="products"
-          icon={Comment}
+          icon={ShoppingCart}
           list={ProductList}
           show={ProductShow}
           create={ProductCreate}
