@@ -57,7 +57,6 @@ export default () => {
         dataProvider
             .getList('categories', { pagination: { page: 1, perPage: 100 } })
             .then(response => {
-                // console.log('categories', response.data);
                 if (response.data && response.data.length) setCategoryLength(response.data.length)
             });
     }, [dataProvider]);
@@ -66,7 +65,6 @@ export default () => {
         dataProvider
             .getList('products', { pagination: { page: 1, perPage: 100 } })
             .then(response => {
-                // console.log('products', response.data); 
                 if (response.data && response.data.length) setProductLength(response.data.length)
             });
     }, [dataProvider]);
