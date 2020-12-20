@@ -1,13 +1,13 @@
 import * as React from "react";
-import { ProductList, ProductShow, ProductCreate, ProductEdit } from "./products";
-import { CategoryList, CategoryShow, CategoryCreate, CategoryEdit } from "./categories";
 import { Admin, Resource } from "react-admin";
 import {
   FirebaseDataProvider,
   FirebaseAuthProvider
 } from "react-admin-firebase";
-import CommentIcon from '@material-ui/icons/Comment';
-import { Dashboard, Category } from '@material-ui/icons';
+import { Comment, Category } from '@material-ui/icons';
+import Dashboard from './dashboard';
+import { ProductList, ProductShow, ProductCreate, ProductEdit } from "./products";
+import { CategoryList, CategoryShow, CategoryCreate, CategoryEdit } from "./categories";
 import CustomLoginPage from './CustomLoginPage';
 import { firebaseConfig } from './FIREBASE_CONFIG';
 
@@ -31,12 +31,8 @@ class App extends React.Component {
         loginPage={CustomLoginPage} 
         dataProvider={dataProvider}
         authProvider={myAuthProvider}
+        dashboard={Dashboard}
       >
-        <Resource
-          name="dashboard"
-          icon={Dashboard}
-          list={ProductList}
-        />
         <Resource
           name="categories"
           icon={Category}
@@ -47,7 +43,7 @@ class App extends React.Component {
         />
         <Resource
           name="products"
-          icon={CommentIcon}
+          icon={Comment}
           list={ProductList}
           show={ProductShow}
           create={ProductCreate}
