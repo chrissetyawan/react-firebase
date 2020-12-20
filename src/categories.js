@@ -34,7 +34,6 @@ export const CategoryList = (props) => (
 export const CategoryShow = (props) => (
   <Show {...props}>
     <SimpleShowLayout>
-      <TextField source="id" />
       <TextField source="name" />
       <RichTextField source="description" />
       <DateField source="createdate" options={{ disabled: true }} />
