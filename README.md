@@ -14,10 +14,10 @@ export const firebaseConfig = {
 };
 ```
 
+```
 run `yarn` or `npm install` for install packages
 run `npm run start`
 
-```
 username: test@example.com
 password: 123456
 ```
