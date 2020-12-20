@@ -21,6 +21,6 @@ export const firebaseConfig = {
 4. Open 'http://localhost:3333' on browser
 5. Login with your user firebase auth
 
-username: test@example.com
-password: 123456
+username: [Email]
+password: [Password]
 ```
