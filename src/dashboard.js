@@ -5,7 +5,7 @@ import React, {
     createElement
 } from 'react';
 import { Link } from 'react-router-dom';
-import { Box, Card, CardActions, Button, Typography, CardContent, CardHeader, Divider } from '@material-ui/core';
+import { Box, Card, Typography, Divider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { useVersion, useDataProvider } from 'react-admin';
 import GradeIcon from '@material-ui/icons/Grade';
@@ -146,7 +146,7 @@ export default () => {
 
                 <CardWithIcon
                     to="/products"
-                    icon={BookmarksIcon}
+                    icon={GradeIcon}
                     title='Product Count'
                     subtitle={productLength || 0}
                 />
