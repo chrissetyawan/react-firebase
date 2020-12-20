@@ -55,7 +55,6 @@ export const CategoryCreate = (props) => (
 export const CategoryEdit = (props) => (
   <Edit {...props}>
     <SimpleForm>
-      <TextInput source="id" options={{ disabled: true }} />
       <DateInput source="createdate" options={{ disabled: true }} />
       <DateInput source="lastupdate" options={{ disabled: true }} />
       <TextInput source="name" />

@@ -46,9 +46,6 @@ export const ProductList = (props) => (
 export const ProductShow = (props) => (
   <Show {...props}>
     <SimpleShowLayout>
-      <TextField source="id" />
-      <TextField source="createdate" />
-      <TextField source="lastupdate" />
       <TextField source="name" />
       <RichTextField multiline  source="description" />
       <ReferenceField label="Category" source="categoriesId" reference="categories">
@@ -75,9 +72,6 @@ export const ProductCreate = (props) => (
 export const ProductEdit = (props) => (
   <Edit {...props}>
     <SimpleForm>
-      <TextField source="id" />
-      <TextField source="createdate" />
-      <TextField source="lastupdate" />
       <TextInput source="name" />
       <TextInput multiline  source="description" />
       <ReferenceInput label="Category" source="categoriesId" reference="categories" validate={[required()]}>
