@@ -16,7 +16,7 @@ export const firebaseConfig = {
 
 ```
 1. run `yarn` for install packages
-2. create Firebase config file: `src/FIREBASE_CONFIG.js`
+2. create Firebase config file: `src/FIREBASE_CONFIG.js` and update the firebaseConfig key
 3. run `yarn start`
 4. Open 'http://localhost:3333' on browser
 5. Login with your user firebase auth
