@@ -2,7 +2,7 @@ An example project for react + firebase + admin panel
 
 # Get started
 
-Prerequsitis
+Prerequisite
 
 ```
 - node js, npm/yarn installed
