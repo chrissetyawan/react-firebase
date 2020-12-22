@@ -1,6 +1,14 @@
 An example project for react + firebase + admin panel
 
 # Get started
+
+Prerequsitis
+
+```
+- node js, npm/yarn installed
+- firebase account and firebase key
+```
+
 You need to create Firebase config file: `src/FIREBASE_CONFIG.js` with the following format from firebase:
 
 ``` js
